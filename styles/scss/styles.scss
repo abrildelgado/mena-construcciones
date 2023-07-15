@@ -1,0 +1,127 @@
+//UNIVERSAL 
+
+p {
+    margin-bottom: 0.2rem;
+}
+
+// NAVBAR + HEADER
+.headerClases {
+    .colorHeader {
+        background-color: rgb(222, 168, 168);
+    }
+
+    .navbar {
+        --bs-navbar-padding-y: 0;
+
+    }
+
+    .navbarTamano {
+        height: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+// LOGO + TEXTO
+
+@media (max-width: 500px) {
+    .logoIndex {
+        max-width: 200px;
+        max-height: 100px;
+    }
+}
+
+.entradaIndex {
+
+    .logoIndex {
+        width: 300px;
+        height: 200px;
+    }
+
+
+    .posicionLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0%;
+    }
+
+    .textoMedio {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .marginTexto {
+        margin: 1%;
+    }
+}
+
+//CARDS
+
+@mixin flex ($justify, $direccion, $align) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direccion;
+    align-items: $align;
+
+}
+
+.sectionCards {
+
+    .cardBetween {
+        @include flex ($direccion: none, $align: none, $justify: center);
+    }
+
+    .cardFlex {
+        @include flex ($direccion: none, $align: none, $justify: center);
+
+    }
+
+    // Mixin Vista Mobile
+    @mixin mobile {
+        @media (max-width: 507px) {
+            @content;
+        }
+    }
+
+    @include mobile {
+        .cardsJustify {
+            @include flex ($direccion: none, $align: none, $justify: center);
+        }
+    }
+
+    .cardPadding {
+        margin-bottom: 5%;
+    }
+
+    @include mobile {
+        .tamanoCard {
+            min-width: 70%;
+        }
+    }
+
+    .separacionCards {
+        margin-top: 4%;
+    }
+
+
+    .cardSize {
+        margin-top: 3%;
+        width: 10%;
+        height: 10%;
+        margin-bottom: 3%;
+    }
+
+    .textoCentrado {
+        text-align: center;
+    }
+
+    .colorCards {
+        background-color: rgb(222, 168, 168);
+    }
+
+}
+
+.tamanofotosIndex {
+    width: 400px;
+    height: 500px;}

@@ -1,0 +1,90 @@
+p {
+  margin-bottom: 0.2rem;
+}
+
+.headerClases .colorHeader {
+  background-color: rgb(222, 168, 168);
+}
+.headerClases .navbar {
+  --bs-navbar-padding-y: 0;
+}
+.headerClases .navbarTamano {
+  height: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .logoIndex {
+    max-width: 200px;
+    max-height: 100px;
+  }
+}
+.entradaIndex .logoIndex {
+  width: 300px;
+  height: 200px;
+}
+.entradaIndex .posicionLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+}
+.entradaIndex .textoMedio {
+  text-align: center;
+  margin-top: 10px;
+}
+.entradaIndex .marginTexto {
+  margin: 1%;
+}
+
+.sectionCards .cardBetween {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  align-items: none;
+}
+.sectionCards .cardFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  align-items: none;
+}
+@media (max-width: 507px) {
+  .sectionCards .cardsJustify {
+    display: flex;
+    justify-content: center;
+    flex-direction: none;
+    align-items: none;
+  }
+}
+.sectionCards .cardPadding {
+  margin-bottom: 5%;
+}
+@media (max-width: 507px) {
+  .sectionCards .tamanoCard {
+    min-width: 70%;
+  }
+}
+.sectionCards .separacionCards {
+  margin-top: 4%;
+}
+.sectionCards .cardSize {
+  margin-top: 3%;
+  width: 10%;
+  height: 10%;
+  margin-bottom: 3%;
+}
+.sectionCards .textoCentrado {
+  text-align: center;
+}
+.sectionCards .colorCards {
+  background-color: rgb(222, 168, 168);
+}
+
+.tamanofotosIndex {
+  width: 400px;
+  height: 500px;
+}
+
+/*# sourceMappingURL=styles.css.map */
