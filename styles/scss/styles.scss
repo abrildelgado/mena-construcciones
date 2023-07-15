@@ -4,10 +4,39 @@ p {
     margin-bottom: 0.2rem;
 }
 
+a {
+    color: rgb(213, 131, 131);
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(213, 131, 131);
+}
+
+//Mixins -----------------------------
+
+//Mixin Display Flex
+
+@mixin flex ($justify, $direccion, $align) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direccion;
+    align-items: $align;
+}
+
+
+// Mixin Vista Mobile
+@mixin mobile {
+    @media (max-width: 507px) {
+        @content;
+    }
+}
+
 // NAVBAR + HEADER
 .headerClases {
     .colorHeader {
-        background-color: rgb(222, 168, 168);
+        background-color: rgb(213, 131, 131);
     }
 
     .navbar {
@@ -117,11 +146,135 @@ p {
     }
 
     .colorCards {
-        background-color: rgb(222, 168, 168);
+        background-color: rgb(213, 131, 131);
     }
 
 }
 
 .tamanofotosIndex {
     width: 400px;
-    height: 500px;}
+    height: 500px;
+}
+
+.flexfotosIndex {
+    display: flex;
+    justify-content: space-between;
+}
+
+//CARRUSELL TEXTO
+
+.carruseltextoPadding {
+    margin-bottom: 6%;
+}
+
+.divTexto {
+
+
+    figure {
+        .tamanoInstagram {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+}
+
+.sectionCarrusel {
+
+    display: flex;
+    justify-content: center;
+
+    .tamanoCarousel {
+
+        @media (min-width: 1400px) {
+            &Carousel {
+                max-width: 80%;
+            }
+        }
+
+        @media (min-width: 1800px) {
+            &Carousel {
+                max-width: 60%;
+            }
+        }
+    }
+
+
+}
+
+//CARRUSELL FOTOS
+
+.carruselIndex {
+
+    padding-top: 1%;
+
+    .divCarrusel {
+
+        padding: 2%;
+
+        .carrousel {
+            display: flex;
+            justify-content: center;
+            width: 550px;
+            height: 700px;
+            padding-bottom: 4%;
+        }
+
+    }
+}
+
+// CARTAS
+
+.paddingCartas {
+    margin: 2%;
+
+
+    .paddingDerecha {
+        margin-right: 1%;
+    }
+
+    .bordesCartas {
+        border-color: black;
+    }
+
+}
+
+//NUESTROS TRABAJOS ----------------------------------------------------------------------------------
+
+h1 {
+    margin: 4%
+}
+
+//FOOTER
+
+footer {
+    background-color: rgb(213, 131, 131);
+    width: 100%;
+    font-size: medium;
+    color: black;
+    padding-top: 6px;
+    @include flex ($direccion: none, $align: center, $justify: center);
+
+    figure {
+        .instagramFooter {
+            display: flex;
+            justify-content: start;
+            align-self: start;
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+    }
+
+    figure {
+        .facebookFooter {
+            display: flex;
+            justify-content: start;
+            align-self: start;
+            width: 25px;
+            height: 25px;
+            margin-left: 10px;
+        }
+    }
+
+}

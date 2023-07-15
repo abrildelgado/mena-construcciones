@@ -2,8 +2,18 @@ p {
   margin-bottom: 0.2rem;
 }
 
+a {
+  color: rgb(213, 131, 131);
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(213, 131, 131);
+}
+
 .headerClases .colorHeader {
-  background-color: rgb(222, 168, 168);
+  background-color: rgb(213, 131, 131);
 }
 .headerClases .navbar {
   --bs-navbar-padding-y: 0;
@@ -79,12 +89,97 @@ p {
   text-align: center;
 }
 .sectionCards .colorCards {
-  background-color: rgb(222, 168, 168);
+  background-color: rgb(213, 131, 131);
 }
 
 .tamanofotosIndex {
   width: 400px;
   height: 500px;
+}
+
+.flexfotosIndex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carruseltextoPadding {
+  margin-bottom: 6%;
+}
+
+.divTexto figure .tamanoInstagram {
+  width: 50px;
+  height: 50px;
+}
+
+.sectionCarrusel {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1400px) {
+  .sectionCarrusel .tamanoCarouselCarousel {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1800px) {
+  .sectionCarrusel .tamanoCarouselCarousel {
+    max-width: 60%;
+  }
+}
+
+.carruselIndex {
+  padding-top: 1%;
+}
+.carruselIndex .divCarrusel {
+  padding: 2%;
+}
+.carruselIndex .divCarrusel .carrousel {
+  display: flex;
+  justify-content: center;
+  width: 550px;
+  height: 700px;
+  padding-bottom: 4%;
+}
+
+.paddingCartas {
+  margin: 2%;
+}
+.paddingCartas .paddingDerecha {
+  margin-right: 1%;
+}
+.paddingCartas .bordesCartas {
+  border-color: black;
+}
+
+h1 {
+  margin: 4%;
+}
+
+footer {
+  background-color: rgb(213, 131, 131);
+  width: 100%;
+  font-size: medium;
+  color: black;
+  padding-top: 6px;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  align-items: center;
+}
+footer figure .instagramFooter {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+footer figure .facebookFooter {
+  display: flex;
+  justify-content: start;
+  align-self: start;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
