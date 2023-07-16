@@ -10,6 +10,12 @@ a {
 h1 {
   text-align: center;
   color: rgb(213, 131, 131);
+  margin-top: 1%;
+}
+
+h2 {
+  text-align: center;
+  color: black;
 }
 
 .headerClases .colorHeader {
@@ -150,8 +156,44 @@ h1 {
   border-color: black;
 }
 
-h1 {
-  margin: 4%;
+@media (max-width: 991px) {
+  .formularioFlex {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input {
+    padding: 10px 6px;
+  }
+}
+.formularioFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.formularioFlex form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb(126, 124, 124);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formularioFlex .input-group {
+  text-align: left;
+}
+.formularioFlex input,
+.formularioFlex textarea {
+  margin-bottom: 10px;
+  background-color: rgb(237, 200, 200);
+  border: 1px solid black;
+  outline: none;
+  padding: 7px 7px;
+}
+.formularioFlex .btn {
+  cursor: pointer;
 }
 
 footer {
