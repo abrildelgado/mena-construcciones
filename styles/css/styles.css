@@ -18,6 +18,16 @@ h2 {
   color: black;
 }
 
+.backgroundFoto {
+  background-image: url(https://hotel-torres-del-sol-villa-de-merlo.hotelmix.es/data/Photos/OriginalPhoto/6441/644154/644154888/Hotel-Torres-Del-Sol-Villa-de-Merlo-Exterior.JPEG);
+  background-repeat: no-repeat;
+  margin: 0.2%;
+  background-size: cover;
+}
+
+.headerClases header {
+  height: 60px;
+}
 .headerClases .colorHeader {
   background-color: rgb(213, 131, 131);
 }
@@ -36,6 +46,10 @@ h2 {
     max-height: 100px;
   }
 }
+.entradaIndex {
+  display: inline-block;
+  padding: 5px;
+}
 .entradaIndex .logoIndex {
   width: 300px;
   height: 200px;
@@ -50,10 +64,40 @@ h2 {
   text-align: center;
   margin-top: 10px;
 }
+.entradaIndex .colortextoLogo {
+  color: white;
+  text-shadow: 0px 0px 9px rgb(0, 0, 0);
+}
 .entradaIndex .marginTexto {
   margin: 1%;
+  color: white;
+  padding: 60px;
+  position: relative;
+  text-shadow: 0px 0px 9px rgb(0, 0, 0);
 }
 
+.botonflexCotizacion {
+  display: flex;
+  justify-content: center;
+}
+.botonflexCotizacion .buttonCotizacion {
+  background-color: rgba(10, 10, 10, 0.5);
+  opacity: 100%;
+  margin: 2%;
+  border: white 1px solid;
+  outline: none;
+}
+.botonflexCotizacion .buttonCotizacion:hover {
+  background-color: rgb(213, 131, 131);
+}
+.botonflexCotizacion .h2Cotizacion {
+  color: white;
+  opacity: 1;
+}
+
+.sectionCards .bordeCartas {
+  outline: black;
+}
 .sectionCards .cardBetween {
   display: flex;
   justify-content: center;
@@ -132,6 +176,18 @@ h2 {
   }
 }
 
+.carousel-inner {
+  border: 3px solid rgb(213, 131, 131);
+  border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgb(213, 131, 131);
+  width: 5%;
+  border-radius: 10px;
+}
+
 .carruselIndex {
   padding-top: 1%;
 }
@@ -156,6 +212,17 @@ h2 {
   border-color: black;
 }
 
+.h1Contactanos {
+  padding-top: 3%;
+  color: white;
+  text-shadow: 0px 0px 9px rgb(0, 0, 0);
+}
+
+.h2Contactanos {
+  color: white;
+  text-shadow: 0px 0px 9px rgb(0, 0, 0);
+}
+
 @media (max-width: 991px) {
   .formularioFlex {
     padding: 50px 30px;
@@ -172,6 +239,7 @@ h2 {
   padding: 2%;
 }
 .formularioFlex form {
+  background-color: white;
   padding: 50px 55px;
   box-shadow: 0 0 20px rgb(126, 124, 124);
   border-radius: 20px;
@@ -196,6 +264,63 @@ h2 {
   cursor: pointer;
 }
 
+.botonesTrabajos {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  padding: none;
+}
+.botonesTrabajos .paddingBoton {
+  margin: 5px;
+  background-color: rgb(213, 131, 131);
+}
+.botonesTrabajos .paddingBoton:hover {
+  background-color: rgb(212, 94, 94);
+}
+.botonesTrabajos a {
+  color: rgb(255, 255, 255);
+}
+
+.paddingh1 {
+  margin-top: 2%;
+}
+
+@media (min-width: 992px) {
+  .paddingCartas img {
+    transition: 1s;
+  }
+  .paddingCartas img:hover {
+    width: 280px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
+.galeriaFotos {
+  display: flex;
+  width: 600px;
+  height: 430px;
+  margin: 5%;
+}
+.galeriaFotos img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.1 ease;
+}
+
+h5.card-title {
+  text-align: center;
+}
+
+.galeriaFotos img:hover {
+  cursor: pointer;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 footer {
   background-color: rgb(213, 131, 131);
   width: 100%;
@@ -206,6 +331,13 @@ footer {
   justify-content: center;
   flex-direction: none;
   align-items: center;
+}
+footer figure .tamanoWhatsapp {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 3%;
+  bottom: 7%;
 }
 footer figure .instagramFooter {
   display: flex;

@@ -20,6 +20,16 @@ h2 {
     color: black;
 }
 
+.backgroundFoto {
+    background-image: url(https://hotel-torres-del-sol-villa-de-merlo.hotelmix.es/data/Photos/OriginalPhoto/6441/644154/644154888/Hotel-Torres-Del-Sol-Villa-de-Merlo-Exterior.JPEG);
+    background-repeat: no-repeat;
+    margin: 0.2%;
+    background-size: cover;
+
+}
+
+
+
 //Mixins -----------------------------
 
 //Mixin Display Flex
@@ -41,6 +51,11 @@ h2 {
 
 // NAVBAR + HEADER
 .headerClases {
+
+    header {
+        height: 60px;
+    }
+
     .colorHeader {
         background-color: rgb(213, 131, 131);
     }
@@ -56,6 +71,9 @@ h2 {
         padding-bottom: 30px;
     }
 }
+
+
+
 
 // LOGO + TEXTO
 
@@ -86,8 +104,48 @@ h2 {
         margin-top: 10px;
     }
 
+    .colortextoLogo {
+        color: white;
+        text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
+    }
+
     .marginTexto {
         margin: 1%;
+        color: white;
+        padding: 60px;
+        position: relative;
+        text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
+
+    }
+
+    display: inline-block;
+    padding: 5px;
+}
+
+//BOTON COTIZACION
+
+.botonflexCotizacion {
+    display: flex;
+    justify-content: center;
+
+
+    .buttonCotizacion {
+        background-color: rgba(10, 10, 10, 0.5);
+        ;
+        opacity: 100%;
+        margin: 2%;
+        border: white 1px solid;
+        outline: none;
+    }
+
+    .buttonCotizacion:hover {
+        background-color: rgb(213, 131, 131);
+    }
+
+
+    .h2Cotizacion {
+        color: white;
+        opacity: 1;
     }
 }
 
@@ -102,6 +160,10 @@ h2 {
 }
 
 .sectionCards {
+
+    .bordeCartas {
+        outline: black;
+    }
 
     .cardBetween {
         @include flex ($direccion: none, $align: none, $justify: center);
@@ -167,6 +229,8 @@ h2 {
     justify-content: space-between;
 }
 
+//SOBRE NOSOTROS ----------------------------------------------------------------------------------------
+
 //CARRUSELL TEXTO
 
 .carruseltextoPadding {
@@ -209,10 +273,22 @@ h2 {
 }
 
 //CARRUSELL FOTOS
+.carousel-inner {
+    border: 3px solid rgb(213, 131, 131);
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgb(213, 131, 131);
+    width: 5%;
+    border-radius: 10px;
+}
 
 .carruselIndex {
 
     padding-top: 1%;
+
 
     .divCarrusel {
 
@@ -225,9 +301,10 @@ h2 {
             height: 700px;
             padding-bottom: 4%;
         }
-
     }
+
 }
+
 
 // CARTAS
 
@@ -246,6 +323,17 @@ h2 {
 }
 
 //CONTACTO ----------------------------------------------------------------------------------
+
+.h1Contactanos {
+    padding-top: 3%;
+    color: white;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
+}
+
+.h2Contactanos {
+    color: white;
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
+}
 
 @media(max-width:991px) {
 
@@ -267,6 +355,7 @@ h2 {
 
 
     form {
+        background-color: white;
         padding: 50px 55px;
         box-shadow: 0 0 20px rgb(126, 124, 124);
         border-radius: 20px;
@@ -296,7 +385,75 @@ h2 {
 
 }
 
-//FOOTER
+//NUESTROS TRABAJOS ----------------------------------------------------------------------------------------
+
+.botonesTrabajos {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: none;
+
+    .paddingBoton {
+        margin: 5px;
+        background-color: rgb(213, 131, 131);
+    }
+
+    .paddingBoton:hover {
+        background-color: rgb(212, 94, 94);
+    }
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+.paddingh1 {
+    margin-top: 2%;
+}
+
+@media (min-width: 992px) {
+    .paddingCartas img {
+        transition: 1s;
+    }
+
+    .paddingCartas img:hover {
+        width: 280px;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+}
+
+
+//GALERIA.... REEVER
+.galeriaFotos {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 5%;
+
+    img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .10 ease;
+    }
+}
+
+h5.card-title {
+    text-align: center;
+}
+
+.galeriaFotos img:hover {
+    cursor: pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+//FOOTER----------------------------------------------------------------------------------------------------
 
 footer {
     background-color: rgb(213, 131, 131);
@@ -305,6 +462,17 @@ footer {
     color: black;
     padding-top: 6px;
     @include flex ($direccion: none, $align: center, $justify: center);
+
+    figure {
+        .tamanoWhatsapp {
+            width: 60px;
+            height: 60px;
+            position: fixed;
+            right: 3%;
+            bottom: 7%;
+        }
+
+    }
 
     figure {
         .instagramFooter {
