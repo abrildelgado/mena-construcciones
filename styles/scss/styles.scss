@@ -1,17 +1,22 @@
 //UNIVERSAL 
 
+* {
+    padding: none;
+    margin: none;
+}
+
 p {
     margin-bottom: 0.2rem;
 }
 
 a {
-    color: rgb(213, 131, 131);
+    color: rgb(200, 77, 77);
     text-decoration: underline;
 }
 
 h1 {
     text-align: center;
-    color: rgb(213, 131, 131);
+    color: rgb(200, 77, 77);
     margin-top: 1%;
 }
 
@@ -20,12 +25,43 @@ h2 {
     color: black;
 }
 
+.colorTrabajos {
+    color: rgb(200, 77, 77);
+}
+
 .backgroundFoto {
     background-image: url(https://hotel-torres-del-sol-villa-de-merlo.hotelmix.es/data/Photos/OriginalPhoto/6441/644154/644154888/Hotel-Torres-Del-Sol-Villa-de-Merlo-Exterior.JPEG);
     background-repeat: no-repeat;
     margin: 0.2%;
     background-size: cover;
 
+}
+
+.backgroundFoto {
+    background-image: url(../images/cabana2.png);
+    background-repeat: no-repeat;
+    margin: 0.2%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.elfsightCSS {
+    background-color: rgb(213, 131, 131);
+    width: auto;
+    height: auto;
+    margin: 4%;
+    padding-top: 3%;
+}
+
+.elfoCSS {
+    display: flex;
+    justify-content: flex-start;
 }
 
 
@@ -52,12 +88,18 @@ h2 {
 // NAVBAR + HEADER
 .headerClases {
 
-    header {
-        height: 60px;
+    a {
+        color: white;
     }
 
+    .navbar-nav .nav-link.active {
+        color: white;
+
+    }
+
+
     .colorHeader {
-        background-color: rgb(213, 131, 131);
+        background-color: rgb(200, 77, 77);
     }
 
     .navbar {
@@ -69,10 +111,9 @@ h2 {
         height: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
+
     }
 }
-
-
 
 
 // LOGO + TEXTO
@@ -85,7 +126,6 @@ h2 {
 }
 
 .entradaIndex {
-
     .logoIndex {
         width: 300px;
         height: 200px;
@@ -112,7 +152,8 @@ h2 {
     .marginTexto {
         margin: 1%;
         color: white;
-        padding: 60px;
+        padding: 10px;
+        padding-top: 10px;
         position: relative;
         text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
 
@@ -122,12 +163,39 @@ h2 {
     padding: 5px;
 }
 
+
+@media (max-width: 767px) {
+    .posicionLogo {
+        width: auto;
+    }
+}
+
+//MITAD Y MITAD
+    .mitadMitad {
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 5px;
+    }
+    
+
+.fondotextoIndex {
+    background-color: rgb(200, 77, 77);
+    padding: 30px;
+    color: white;
+}
+
+.fondotextoIndexDos {
+    background-color: rgb(120, 116, 116);
+    padding: 30px;
+    color: white;
+}
+
 //BOTON COTIZACION
 
 .botonflexCotizacion {
     display: flex;
     justify-content: center;
-
+    padding-top: 20px;
 
     .buttonCotizacion {
         background-color: rgba(10, 10, 10, 0.5);
@@ -139,7 +207,7 @@ h2 {
     }
 
     .buttonCotizacion:hover {
-        background-color: rgb(213, 131, 131);
+        background-color: rgb(200, 77, 77);
     }
 
 
@@ -160,6 +228,8 @@ h2 {
 }
 
 .sectionCards {
+
+    padding: 2%;
 
     .bordeCartas {
         outline: black;
@@ -214,7 +284,7 @@ h2 {
     }
 
     .colorCards {
-        background-color: rgb(213, 131, 131);
+        background-color: rgb(200, 77, 77);
     }
 
 }
@@ -232,6 +302,10 @@ h2 {
 //SOBRE NOSOTROS ----------------------------------------------------------------------------------------
 
 //CARRUSELL TEXTO
+
+.carruselIndex .divCarrusel {
+    padding: 5%;
+}
 
 .carruseltextoPadding {
     margin-bottom: 6%;
@@ -274,13 +348,13 @@ h2 {
 
 //CARRUSELL FOTOS
 .carousel-inner {
-    border: 3px solid rgb(213, 131, 131);
+    border: 3px solid rgb(200, 77, 77);
     border-radius: 10px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: rgb(213, 131, 131);
+    background-color: rgb(200, 77, 77);
     width: 5%;
     border-radius: 10px;
 }
@@ -324,6 +398,15 @@ h2 {
 
 //CONTACTO ----------------------------------------------------------------------------------
 
+.backgroundForm {
+    background-color: rgb(200, 77, 77);
+    padding-bottom: 3%;
+}
+
+.backgroundFormDos {
+    background-color: rgb(169, 155, 155);
+}
+
 .h1Contactanos {
     padding-top: 3%;
     color: white;
@@ -351,7 +434,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 10%;
 
 
     form {
@@ -383,9 +466,22 @@ h2 {
         cursor: pointer;
     }
 
+    input:hover {
+        background-color: rgb(200, 77, 77);
+        color: white;
+        cursor: pointer;
+    }
+
+    textarea:hover {
+        background-color: rgb(200, 77, 77);
+        color: white;
+        cursor: pointer;
+    }
+
 }
 
 //NUESTROS TRABAJOS ----------------------------------------------------------------------------------------
+
 
 .botonesTrabajos {
     display: flex;
@@ -395,11 +491,11 @@ h2 {
 
     .paddingBoton {
         margin: 5px;
-        background-color: rgb(213, 131, 131);
+        background-color: rgb(200, 77, 77);
     }
 
     .paddingBoton:hover {
-        background-color: rgb(212, 94, 94);
+        background-color: rgb(200, 77, 77);
     }
 
     a {
@@ -410,6 +506,7 @@ h2 {
 
 .paddingh1 {
     margin-top: 2%;
+    padding: 10px;
 }
 
 @media (min-width: 992px) {
@@ -442,7 +539,12 @@ h2 {
     }
 }
 
-h5.card-title {
+h1 {
+    padding: 10px;
+
+}
+
+h6.card-title {
     text-align: center;
 }
 
@@ -455,45 +557,84 @@ h5.card-title {
 
 //FOOTER----------------------------------------------------------------------------------------------------
 
-footer {
-    background-color: rgb(213, 131, 131);
-    width: 100%;
-    font-size: medium;
+
+//foooter nuevo
+
+.footer {
+
+    background-color: rgb(200, 77, 77);
     color: black;
-    padding-top: 6px;
-    @include flex ($direccion: none, $align: center, $justify: center);
+    padding: 4px;
+    height: 2%;
 
-    figure {
-        .tamanoWhatsapp {
-            width: 60px;
-            height: 60px;
-            position: fixed;
-            right: 3%;
-            bottom: 7%;
+    p {
+        font-weight: 500;
+        display: flex;
+        justify-content: start;
+    }
+
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footerLista {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+
+            .last-child {
+                margin-right: 0;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+            }
+
+            a:hover {
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        b,
+        strong {
+            font: 100;
         }
 
     }
 
-    figure {
-        .instagramFooter {
-            display: flex;
-            justify-content: start;
-            align-self: start;
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
-        }
+    .tamanoWhatsapp {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        right: 3%;
+        bottom: 10%;
     }
 
-    figure {
-        .facebookFooter {
-            display: flex;
-            justify-content: start;
-            align-self: start;
-            width: 25px;
-            height: 25px;
-            margin-left: 10px;
-        }
+    .footerLista li {
+        display: inline;
+        margin-right: 10px;
     }
 
+    @media (max-width: 992px) {
+        .footerLista {
+            display: none;
+        }
+    }
 }
