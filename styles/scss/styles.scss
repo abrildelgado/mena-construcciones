@@ -29,13 +29,6 @@ h2 {
     color: rgb(200, 77, 77);
 }
 
-.backgroundFoto {
-    background-image: url(https://hotel-torres-del-sol-villa-de-merlo.hotelmix.es/data/Photos/OriginalPhoto/6441/644154/644154888/Hotel-Torres-Del-Sol-Villa-de-Merlo-Exterior.JPEG);
-    background-repeat: no-repeat;
-    margin: 0.2%;
-    background-size: cover;
-
-}
 
 .backgroundFoto {
     background-image: url(../images/cabana2.png);
@@ -44,12 +37,18 @@ h2 {
     background-size: cover;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
     padding-top: 10%;
     padding-bottom: 10%;
+    min-height: 300px;
 }
 
+@media (max-width: 768px) {
+    .backgroundFoto {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        height: 500px;
+    }
+}
 
 .elfsightCSS {
     background-color: rgb(213, 131, 131);
@@ -153,10 +152,10 @@ h2 {
         margin: 1%;
         color: white;
         padding: 10px;
-        padding-top: 10px;
+        padding-top: 40px;
+        padding-bottom: 20px;
         position: relative;
-        text-shadow: 0px 0px 9px rgba(0, 0, 0, 4);
-
+        text-shadow: 0px 0px 9px rgb(0, 0, 0);
     }
 
     display: inline-block;
@@ -171,12 +170,12 @@ h2 {
 }
 
 //MITAD Y MITAD
-    .mitadMitad {
-        max-width: 100%;
-        overflow-x: hidden;
-        padding: 5px;
-    }
-    
+.mitadMitad {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
 
 .fondotextoIndex {
     background-color: rgb(200, 77, 77);
@@ -404,7 +403,7 @@ h2 {
 }
 
 .backgroundFormDos {
-    background-color: rgb(169, 155, 155);
+    background-color: rgb(181, 179, 179);
 }
 
 .h1Contactanos {
@@ -440,7 +439,7 @@ h2 {
     form {
         background-color: white;
         padding: 50px 55px;
-        box-shadow: 0 0 20px rgb(126, 124, 124);
+        box-shadow: 0 0 20px rgb(144, 142, 142);
         border-radius: 20px;
         text-align: center;
         width: 340px;
@@ -467,13 +466,13 @@ h2 {
     }
 
     input:hover {
-        background-color: rgb(200, 77, 77);
+        background-color: rgb(188, 138, 138);
         color: white;
         cursor: pointer;
     }
 
     textarea:hover {
-        background-color: rgb(200, 77, 77);
+        background-color: rgb(188, 138, 138);
         color: white;
         cursor: pointer;
     }
