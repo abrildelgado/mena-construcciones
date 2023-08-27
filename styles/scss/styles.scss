@@ -522,21 +522,6 @@ h2 {
 }
 
 
-//GALERIA.... REEVER
-.galeriaFotos {
-    display: flex;
-    width: 600px;
-    height: 430px;
-    margin: 5%;
-
-    img {
-        width: 0px;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .8;
-        transition: .10 ease;
-    }
-}
 
 h1 {
     padding: 10px;
@@ -552,6 +537,26 @@ h6.card-title {
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
+}
+
+.displayFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCentrado {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+
+    .buttonCSS {
+        display: inline-block;
+        border-radius: 80px;
+    }
 }
 
 //FOOTER----------------------------------------------------------------------------------------------------
