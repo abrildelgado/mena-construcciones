@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(249, 238, 225);
+}
+
 * {
   padding: none;
   margin: none;
@@ -156,6 +160,16 @@ h2 {
 .botonflexCotizacion .h2Cotizacion {
   color: white;
   opacity: 1;
+  font-size: large;
+  font-weight: 400;
+  text-decoration: none;
+}
+.botonflexCotizacion .estilosCotizacion {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .sectionCards {
@@ -288,7 +302,7 @@ h2 {
 }
 
 .backgroundFormDos {
-  background-color: rgb(181, 179, 179);
+  background-color: rgb(153, 152, 152);
 }
 
 .h1Contactanos {
@@ -320,7 +334,7 @@ h2 {
 .formularioFlex form {
   background-color: white;
   padding: 50px 55px;
-  box-shadow: 0 0 20px rgb(144, 142, 142);
+  box-shadow: 0 0 20px rgb(77, 77, 77);
   border-radius: 20px;
   text-align: center;
   width: 340px;
@@ -343,7 +357,7 @@ h2 {
   cursor: pointer;
 }
 .formularioFlex input:hover {
-  background-color: rgb(188, 138, 138);
+  background-color: rgb(202, 133, 133);
   color: white;
   cursor: pointer;
 }
@@ -420,6 +434,42 @@ h6.card-title {
   border-radius: 80px;
 }
 
+.marginBottomfaq {
+  margin-bottom: 40px;
+}
+
+.fqColor {
+  background-color: rgb(249, 238, 225);
+}
+
+.faqPadding {
+  margin-bottom: 40px;
+}
+
+.colorTitulofaq {
+  color: rgb(200, 77, 77);
+}
+
+@media (max-width: 992px) {
+  .acordeonPreguntas {
+    display: block;
+  }
+}
+@media (min-width: 993px) {
+  .acordeonPreguntas {
+    display: none;
+  }
+}
+@media (max-width: 993px) {
+  .preguntasAparecen {
+    display: none;
+  }
+}
+@media (min-width: 993px) {
+  .preguntasAparecen {
+    display: block;
+  }
+}
 .footer {
   background-color: rgb(200, 77, 77);
   color: black;
