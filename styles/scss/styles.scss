@@ -1,7 +1,7 @@
 //UNIVERSAL 
 
 body {
-    background-color: rgb(249, 238, 225);
+    background-color: rgba(208, 206, 206, 0.661);
 }
 
 * {
@@ -35,22 +35,19 @@ h2 {
 
 
 .backgroundFoto {
-    background-image: url(../images/cabana2.png);
+    background-image: url(../images/cabanita.jpg);
     background-repeat: no-repeat;
-    margin: 0.2%;
     background-size: cover;
     top: 0;
     left: 0;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 2%;
     min-height: 300px;
 }
 
 @media (max-width: 768px) {
     .backgroundFoto {
-        padding-top: 1px;
-        padding-bottom: 1px;
-        height: 500px;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 }
 
@@ -92,17 +89,21 @@ h2 {
 .headerClases {
 
     a {
+        color: rgb(0, 0, 0);
+    }
+
+    a:hover {
         color: white;
     }
 
     .navbar-nav .nav-link.active {
-        color: white;
+        color: rgb(0, 0, 0);
 
     }
 
 
     .colorHeader {
-        background-color: rgb(200, 77, 77);
+        background-color: rgb(174, 174, 174);
     }
 
     .navbar {
@@ -155,9 +156,8 @@ h2 {
     .marginTexto {
         margin: 1%;
         color: white;
-        padding: 10px;
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding-top: 5%;
+        padding-bottom: 15%;
         position: relative;
         text-shadow: 0px 0px 9px rgb(0, 0, 0);
     }
@@ -165,6 +165,7 @@ h2 {
     display: inline-block;
     padding: 5px;
 }
+
 
 
 @media (max-width: 767px) {
@@ -178,18 +179,19 @@ h2 {
     max-width: 100%;
     overflow-x: hidden;
     padding: 5px;
+    padding-top: 2%;
 }
 
 
 .fondotextoIndex {
     background-color: rgb(200, 77, 77);
-    padding: 30px;
+    padding: 20px;
     color: white;
 }
 
 .fondotextoIndexDos {
     background-color: rgb(120, 116, 116);
-    padding: 30px;
+    padding: 20px;
     color: white;
 }
 
@@ -198,7 +200,7 @@ h2 {
 .botonflexCotizacion {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    margin-top: 6%;
 
     .buttonCotizacion {
         background-color: rgba(10, 10, 10, 0.5);
@@ -245,7 +247,6 @@ h2 {
 
 .sectionCards {
 
-    padding: 2%;
 
     .bordeCartas {
         outline: black;
@@ -262,7 +263,7 @@ h2 {
 
     // Mixin Vista Mobile
     @mixin mobile {
-        @media (max-width: 507px) {
+        @media (max-width: 998px) {
             @content;
         }
     }
@@ -303,6 +304,7 @@ h2 {
         background-color: rgb(200, 77, 77);
     }
 
+
 }
 
 .tamanofotosIndex {
@@ -315,6 +317,9 @@ h2 {
     justify-content: space-between;
 }
 
+
+
+
 //SOBRE NOSOTROS ----------------------------------------------------------------------------------------
 
 //CARRUSELL TEXTO
@@ -325,6 +330,7 @@ h2 {
 
 .carruseltextoPadding {
     margin-bottom: 6%;
+    margin-top: 10%;
 }
 
 .divTexto {
@@ -576,6 +582,19 @@ h6.card-title {
     }
 }
 
+.cardTrabajos {
+    border: 1px solid rgb(200, 77, 77);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    
+}
+
+
+
 //PREGUNTAS FRECUENTES -------------------------------------------------------------------------------------
 
 .marginBottomfaq {
@@ -598,14 +617,14 @@ h6.card-title {
 
 @media (max-width: 992px) {
     .acordeonPreguntas {
-        display: block; 
+        display: block;
     }
 }
 
 
 @media (min-width: 993px) {
     .acordeonPreguntas {
-        display: none; 
+        display: none;
     }
 }
 
@@ -613,14 +632,14 @@ h6.card-title {
 
 @media (max-width: 993px) {
     .preguntasAparecen {
-        display: none; 
+        display: none;
     }
 }
 
 
 @media (min-width: 993px) {
     .preguntasAparecen {
-        display: block; 
+        display: block;
     }
 }
 
@@ -631,7 +650,7 @@ h6.card-title {
 
 .footer {
 
-    background-color: rgb(200, 77, 77);
+    background-color: rgb(174, 174, 174);
     color: black;
     padding: 4px;
     height: 2%;
@@ -669,7 +688,7 @@ h6.card-title {
             }
 
             a {
-                color: #fff;
+                color: #000000;
                 text-decoration: none;
                 transition: color 0.3s ease;
 

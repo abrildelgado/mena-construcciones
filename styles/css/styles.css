@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(249, 238, 225);
+  background-color: rgba(208, 206, 206, 0.661);
 }
 
 * {
@@ -32,22 +32,19 @@ h2 {
 }
 
 .backgroundFoto {
-  background-image: url(../images/cabana2.png);
+  background-image: url(../images/cabanita.jpg);
   background-repeat: no-repeat;
-  margin: 0.2%;
   background-size: cover;
   top: 0;
   left: 0;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 2%;
   min-height: 300px;
 }
 
 @media (max-width: 768px) {
   .backgroundFoto {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    height: 500px;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
 .elfsightCSS {
@@ -64,13 +61,16 @@ h2 {
 }
 
 .headerClases a {
+  color: rgb(0, 0, 0);
+}
+.headerClases a:hover {
   color: white;
 }
 .headerClases .navbar-nav .nav-link.active {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .headerClases .colorHeader {
-  background-color: rgb(200, 77, 77);
+  background-color: rgb(174, 174, 174);
 }
 .headerClases .navbar {
   --bs-navbar-padding-y: 0;
@@ -112,9 +112,8 @@ h2 {
 .entradaIndex .marginTexto {
   margin: 1%;
   color: white;
-  padding: 10px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 5%;
+  padding-bottom: 15%;
   position: relative;
   text-shadow: 0px 0px 9px rgb(0, 0, 0);
 }
@@ -128,24 +127,25 @@ h2 {
   max-width: 100%;
   overflow-x: hidden;
   padding: 5px;
+  padding-top: 2%;
 }
 
 .fondotextoIndex {
   background-color: rgb(200, 77, 77);
-  padding: 30px;
+  padding: 20px;
   color: white;
 }
 
 .fondotextoIndexDos {
   background-color: rgb(120, 116, 116);
-  padding: 30px;
+  padding: 20px;
   color: white;
 }
 
 .botonflexCotizacion {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  margin-top: 6%;
 }
 .botonflexCotizacion .buttonCotizacion {
   background-color: rgba(10, 10, 10, 0.5);
@@ -172,9 +172,6 @@ h2 {
   height: 100%;
 }
 
-.sectionCards {
-  padding: 2%;
-}
 .sectionCards .bordeCartas {
   outline: black;
 }
@@ -190,7 +187,7 @@ h2 {
   flex-direction: none;
   align-items: none;
 }
-@media (max-width: 507px) {
+@media (max-width: 998px) {
   .sectionCards .cardsJustify {
     display: flex;
     justify-content: center;
@@ -201,7 +198,7 @@ h2 {
 .sectionCards .cardPadding {
   margin-bottom: 5%;
 }
-@media (max-width: 507px) {
+@media (max-width: 998px) {
   .sectionCards .tamanoCard {
     min-width: 70%;
   }
@@ -238,6 +235,7 @@ h2 {
 
 .carruseltextoPadding {
   margin-bottom: 6%;
+  margin-top: 10%;
 }
 
 .divTexto figure .tamanoInstagram {
@@ -434,6 +432,16 @@ h6.card-title {
   border-radius: 80px;
 }
 
+.cardTrabajos {
+  border: 1px solid rgb(200, 77, 77);
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
 .marginBottomfaq {
   margin-bottom: 40px;
 }
@@ -471,7 +479,7 @@ h6.card-title {
   }
 }
 .footer {
-  background-color: rgb(200, 77, 77);
+  background-color: rgb(174, 174, 174);
   color: black;
   padding: 4px;
   height: 2%;
@@ -504,7 +512,7 @@ h6.card-title {
   margin-right: 0;
 }
 .footer .footerLista li a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
